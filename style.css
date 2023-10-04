@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+}
+
+main {
+  background-color: #f1f5f8;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#info {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#bgcolor {
+  color: #49a6e9;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: white;
+  box-shadow: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  border-radius: 5px;
+}
