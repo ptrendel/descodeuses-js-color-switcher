@@ -1,15 +1,15 @@
-//let color = ["#F1F5F8", "#FF6604", "#C6F5B2", "#AAC4F1"];
-let color = [
-  "rgb(0,0,0)",
-  "rgb(255,255,255)",
-  "rgb(0,128,234)",
-  "rgb(64,28,32)",
-];
-
 function setBgColor() {
-  const randomNumber = getRandomNumber(color.length);
-  document.getElementById("bg").style.backgroundColor = color[randomNumber];
-  document.getElementById("bgcolor").innerHTML = color[randomNumber];
+  let randomColor = getRGBColor();
+  document.getElementById("bg").style.backgroundColor = randomColor;
+  document.getElementById("bgcolor").innerHTML = randomColor;
+}
+
+function getRGBColor() {
+  const r = getRandomNumber(255);
+  const g = getRandomNumber(255);
+  const b = getRandomNumber(255);
+  const rgbValue = `rgb(${r},${g},${b})`;
+  return rgbValue;
 }
 
 function getRandomNumber(max) {
