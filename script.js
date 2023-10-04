@@ -1,2 +1,7 @@
-var color = "yellow";
-document.getElementById("bg").style.backgroundColor = color;
+let color = "yellow";
+
+function setBgColor() {
+  document.getElementById("bg").style.backgroundColor = color;
+}
+
+setBgColor();
